@@ -8,10 +8,12 @@ import MovieDetails from "./Components/Movies/MovieDetails";
 import Videos from "./Components/Videos/Videos";
 import VideoDetails from "./Components/Videos/VideoDetails";
 import Music from "./Components/Music/Music";
+import CategoryDetails from "./Components/HorizontalNavigator/CategoryDetails";
 const AppNavigator = createStackNavigator(
   {
     Home: ContentContainer,
     Movies: Movies,
+    CategoryDetails: CategoryDetails,
     News: News,
     Cryptocurrency: Crypto,
     CryptoDetails: CryptoDetails,
