@@ -7,8 +7,11 @@ import CryptoDetails from "./Components/Cryptocurrency/CryptoDetails";
 import MovieDetails from "./Components/Movies/MovieDetails";
 import Videos from "./Components/Videos/Videos";
 import VideoDetails from "./Components/Videos/VideoDetails";
-import Music from "./Components/Music/Music";
 import CategoryDetails from "./Components/HorizontalNavigator/CategoryDetails";
+import Auto from "./Components/Auto/Auto";
+import AutoDetails from "./Components/Auto/AutoDetails";
+import Podcast from "./Components/Podcast/Podcast";
+import PodPlay from "./Components/Podcast/PodPlay";
 const AppNavigator = createStackNavigator(
   {
     Home: ContentContainer,
@@ -20,7 +23,10 @@ const AppNavigator = createStackNavigator(
     MovieDetails: MovieDetails,
     Videos: Videos,
     VideoDetails: VideoDetails,
-    Music: Music
+    Podcast: Podcast,
+    PodPlay: PodPlay,
+    Auto: Auto,
+    AutoDetails: AutoDetails
   },
   {
     initialRouteName: "Home"

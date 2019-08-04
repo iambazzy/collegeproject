@@ -35,8 +35,8 @@ class ContentContainer extends Component {
       return (
         <TouchableOpacity
           onPress={() => {
-            this.props.navigation.navigate("CategoryDetails",{
-              // send params here 
+            this.props.navigation.navigate("CategoryDetails", {
+              // send params here
             });
           }}
         >
@@ -138,7 +138,7 @@ class ContentContainer extends Component {
                   headerText={
                     <Text
                       onPress={() => {
-                        this.props.navigation.navigate("Music");
+                        this.props.navigation.navigate("Podcast");
                       }}
                     >
                       {"Podcasts"}
@@ -177,7 +177,15 @@ class ContentContainer extends Component {
               <View style={styles.petrol}>
                 <CustomImage
                   imageSource={require("../../Assets/Images/auto.jpg")}
-                  headerText={<Text>{"Auto"}</Text>}
+                  headerText={
+                    <Text
+                      onPress={() => {
+                        this.props.navigation.navigate("Auto");
+                      }}
+                    >
+                      {"Auto"}
+                    </Text>
+                  }
                 />
               </View>
             </View>
